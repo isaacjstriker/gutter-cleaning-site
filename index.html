@@ -41,10 +41,30 @@
         </div>
     </section>
 
+    /* write a section that embeds a contact form */
+
+
     <section id="contact">
         <h3>Contact Us</h3>
-        <p>Call us at: <strong>(555) 123-4567</strong></p>
-        <p>Email: <strong>clean@pureflowgutters.com</strong></p>
+        <div class="contact-info">
+            <p>Call us at: <strong>(555) 123-4567</strong></p>
+            <p>Email: <strong>clean@pureflowgutters.com</strong></p>
+        </div>
+        <form class="contact-form" action="YOUR_FORMSPREE_URL_HERE" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
     </section>
 
     <footer>
