@@ -31,6 +31,28 @@ nav a {
     text-decoration: none;
 }
 
+section:has(iframe) {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+section:has(iframe) > div {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    max-width: 100%;
+    min-height: 450px;
+    height: auto;
+}
+
+footer {
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
 .hero {
     background: #f4f4f4;
     text-align: center;
@@ -45,6 +67,12 @@ nav a {
     border-radius: 5px;
     display: inline-block;
     margin-top: 20px;
+}
+
+#services {
+    background: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .service-grid {
