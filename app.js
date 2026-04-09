@@ -5,10 +5,10 @@ var currentYear = document.write(year.getFullYear());
 
 // hamburger menu script
 
-const hamburger = document.getElementById('hamburger');
+const hamburger = document.querySelector('.hamburger-menu');
 const navMenu = document.querySelector('nav ul');
 
 hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
 });
