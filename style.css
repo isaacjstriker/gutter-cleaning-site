@@ -60,6 +60,67 @@ footer {
     padding: 20px 0;
 }
 
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.instagram-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instagram-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.facebook-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1877f2;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facebook-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.google-business-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #dadce0;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.google-business-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 .hamburger-menu {
     display: none;
 }
@@ -94,6 +155,12 @@ footer {
     text-align: center;
 }
 
+#services h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -112,6 +179,11 @@ footer {
     color: white;
     text-align: center;
     padding: 40px;
+}
+
+#contact h3 {
+    margin-top: 0;
+    font-size: 2rem;
 }
 
 .contact-form {
@@ -163,6 +235,50 @@ footer {
 
 .submit-button:hover, .contact-button:hover, .cta-button:hover {
     background: #d35400;
+}
+
+#calendar {
+    background: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#calendar h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
+#calendar p {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+#calendar iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: block;
+}
+
+#testimonials {
+    background: #ecf0f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#testimonials h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
+#location h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 2rem;
 }
 
 @media (max-width: 768px) {
